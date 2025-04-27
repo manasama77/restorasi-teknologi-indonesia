@@ -12,7 +12,7 @@
                 <i class="fas fa-arrow-left fa-fw"></i> Kembali
             </a>
         </div>
-        <div class="card max-w-sm">
+        <div class="card max-w-sm border">
             <div class="card-body">
                 <form action="#" method="get" class="space-y-3">
                     <div>

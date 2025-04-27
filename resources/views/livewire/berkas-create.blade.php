@@ -12,9 +12,16 @@
                 <i class="fas fa-arrow-left fa-fw"></i> Kembali
             </a>
         </div>
-        <div class="card max-w-sm">
+        <div class="card max-w-sm border">
             <div class="card-body">
                 <form action="#" method="get" class="space-y-3" enctype="multipart/form-data">
+                    <div>
+                        <label class="label-text" for="tanggal">Tanggal & Jam Berkas</label>
+                        <div class="join w-full">
+                            <input type="date" class="input" id="tanggal" name="tanggal" required autofocus />
+                            <input type="time" class="input" id="jam" name="jam" required />
+                        </div>
+                    </div>
                     <div>
                         <label class="label-text" for="no_berkas">No Berkas</label>
                         <input type="text" placeholder="No Berkas" class="input" id="no_berkas" name="no_berkas"

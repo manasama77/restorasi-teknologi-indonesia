@@ -29,6 +29,7 @@
                                 <th>No Berkas</th>
                                 <th>Nama Customer</th>
                                 <th>Tanggal Upload</th>
+                                <th class="text-center">Tipe Berkas</th>
                                 <th class="text-center">
                                     <i class="fas fa-cogs"></i>
                                 </th>
@@ -52,8 +53,11 @@
                                     <td>
                                         {{ $data->tanggal->diffForHumans() }}
                                     </td>
+                                    <td class="text-center">
+                                        {{ strtoupper($data->tipe) }}
+                                    </td>
                                     <td>
-                                        <div class="flex flex-wrap items-center justify-center gap-2">
+                                        <div class="flex flex-nowrap items-center justify-center gap-1">
                                             <button type="button" class="btn btn-sm btn-primary"
                                                 wire:click="download({{ $data->id }})">
                                                 <i class="fas fa-file fa-fw"></i> Download
